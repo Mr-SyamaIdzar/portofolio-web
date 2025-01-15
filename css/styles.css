@@ -59,6 +59,7 @@ body {
 
 .hero {
   justify-content: space-between;
+  padding: 0 3rem;
 }
 
 .hero .intro {
@@ -82,9 +83,9 @@ h2 {
   background-color: var(--font-color);
 }
 
-.hero .image img {
-  scale: 1.5;
-  margin-right: 2rem;
+.hero img {
+  width: 30%;
+  height: auto;
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -107,11 +108,38 @@ h2 {
     font-size: 8rem; /* 128px */
     line-height: 1;
   }
+
+  .hero .intro h1,
+  h2 {
+    font-size: 3.75rem; /* 60px */
+    line-height: 1;
+  }
+
+  .hero .intro p {
+    font-size: 8rem; /* 128px */
+    line-height: 1;
+  }
 }
 
 /* Tablet */
 @media (max-width: 768px) {
   .content h1 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+
+  .hero .intro,
+  .hero .image {
+    width: 100%;
+  }
+
+  .hero .intro h1,
+  h2 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+
+  .hero .intro p {
     font-size: 2.25rem; /* 36px */
     line-height: 2.5rem; /* 40px */
   }
@@ -122,5 +150,21 @@ h2 {
   .content h1 {
     font-size: 1.5rem; /* 24px */
     line-height: 2rem; /* 32px */
+  }
+
+  .hero .intro,
+  .hero .image {
+    width: 100%;
+  }
+
+  .hero .intro h1,
+  h2 {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
+
+  .hero .intro p {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
   }
 }
