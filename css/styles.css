@@ -89,6 +89,25 @@ h2 {
   height: auto;
 }
 
+.contact div {
+  width: 25%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--font-color);
+}
+
+i {
+  scale: 4;
+}
+
+.contact div p {
+  display: block;
+}
+
 @media (min-aspect-ratio: 16/9) {
   .back-video {
     width: 100%;
