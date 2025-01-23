@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  color: var(--font-color);
 }
 
 body {
@@ -38,7 +39,6 @@ section {
 .content h1 {
   font-size: 3rem; /* 48px */
   line-height: 1;
-  color: var(--font-color);
   font-weight: 600;
   transition: 0.5s;
 }
@@ -59,10 +59,6 @@ section {
 #hero {
   justify-content: space-between;
   padding: 0 3rem;
-}
-
-#hero .intro {
-  color: var(--font-color);
 }
 
 #hero .intro h1,
@@ -87,6 +83,33 @@ h2 {
   height: auto;
 }
 
+#project {
+  height: auto;
+  margin-inline: auto;
+}
+
+#project img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+/* Sub-grid */
+.box {
+  border: 1ps solid #fff;
+  border-radius: 6px;
+  padding: 2rem;
+  text-align: center;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
 #contact div {
   width: 25%;
   height: auto;
@@ -100,7 +123,6 @@ h2 {
 
 #contact div a {
   text-decoration: none;
-  color: var(--font-color);
 }
 
 i {
