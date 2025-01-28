@@ -1,3 +1,8 @@
+const toggle = document.getElementById("toggle");
+const nav = document.getElementById("nav");
+
+toggle.addEventListener("click", () => nav.classList.toggle("active"));
+
 const typedTextSpan = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
