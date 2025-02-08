@@ -6,7 +6,7 @@ toggle.addEventListener("click", () => nav.classList.toggle("active"));
 const typedTextSpan = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
-let words = ["Programmer", "Unemployment", "Chill Guy"];
+let words = ["Programmer", "Nolep", "Chill Guy"];
 const typingDelay = 200;
 const erasingDelay = 200;
 // Delay between current and next text
@@ -43,3 +43,17 @@ function erase() {
     setTimeout(type, typingDelay + 1100);
   }
 }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));

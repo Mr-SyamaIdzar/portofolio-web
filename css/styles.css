@@ -17,8 +17,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Efek fade */
-
 nav {
   background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
   padding: 20px;
@@ -215,6 +213,35 @@ h2 {
 
 i {
   scale: 4;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.box:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+  transition-delay: 600ms;
 }
 
 @media (min-aspect-ratio: 16/9) {
