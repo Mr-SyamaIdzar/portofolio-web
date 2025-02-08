@@ -6,7 +6,7 @@ toggle.addEventListener("click", () => nav.classList.toggle("active"));
 const typedTextSpan = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
-let words = ["Programmer", "Nolep", "Chill Guy"];
+let words = ["Unemployement", "Nolep", "Chill Guy"];
 const typingDelay = 200;
 const erasingDelay = 200;
 // Delay between current and next text
