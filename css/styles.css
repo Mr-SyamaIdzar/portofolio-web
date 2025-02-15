@@ -398,6 +398,11 @@ i {
     margin-right: 0;
   }
 
+  .card:hover::before {
+    transform: rotate(0deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  }
+
   #hero .intro h1,
   h2 {
     font-size: 1.125rem; /* 18px */
